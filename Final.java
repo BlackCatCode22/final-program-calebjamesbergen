@@ -1,3 +1,11 @@
+/*
+Here is my final program
+This is the link to the video of it: https://www.youtube.com/watch?v=r1vg4hKgciU
+The program reads the input file line by line and divides the lines up into variables containing certain information
+An animal object is then created with that information and put into a linked list for the specific habitat it belongs to
+At the end, the contents of the linked list are written into the output file zooPopulation.txt
+*/
+
 import java.io.*;
 import java.util.*;
 import java.time.LocalDateTime;
@@ -86,25 +94,18 @@ public class Final
         writer.write("\n\nHyena Habitat:\n\n");
         for(AnimalClass animal : hyenaHabitat){
             writer.write(animal.toString() + "\n");
-            System.out.println();
-            // System.out.println(animal.toString());
         }
         writer.write("\n\nLion Habitat:\n\n");
         for(AnimalClass animal : lionHabitat){
             writer.write(animal.toString() + "\n");
-            // System.out.println(animal.toString());
         }
         writer.write("\n\nBear Habitat:\n\n");
         for(AnimalClass animal : bearHabitat){
             writer.write(animal.toString() + "\n");
-            System.out.println();
-            // System.out.println(animal.toString());
         }
         writer.write("\n\nTiger Habitat:\n\n");
         for(AnimalClass animal : tigerHabitat){
             writer.write(animal.toString() + "\n");
-            System.out.println();
-            // System.out.println(animal.toString());
         }
         writer.close();
     }
